@@ -10,6 +10,14 @@
     font-size: 22px; 
 
 }
+#first-section{
+    background: #F8F0E3;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .container{
     padding: 10px 10%; 
 }
@@ -38,7 +46,7 @@ nav ul li a::after{
     content: ''; 
     width: 0; 
     height: 3px; 
-    background: #ff004f; 
+    background: rgb(146, 173, 146); 
     position: absolute; 
     left: 0; 
     bottom: -6px; 
@@ -47,4 +55,34 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%; 
 }
+.header{
+    padding: 80px 0; 
+    color: rgb(146, 173, 146)
+}
+.row{
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+.about-col-1{
+    flex-basis: 35%; 
 
+}
+.about-col-1 img{
+    flex-basis: 100%; 
+    border-radius: 15px; 
+    width: 400px; 
+    height: auto;
+    
+}
+.header-text{
+    margin-top: 10%; 
+    font-size: 30px; 
+}
+.header-text h1{
+    font-size: 60px; 
+    margin-top: 20px; 
+}
+.header-text span{
+    color: rgb(146, 173, 146)
+}
