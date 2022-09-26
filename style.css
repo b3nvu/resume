@@ -1,88 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --yellow: #f9ca24; 
+}
+
 *{
-    margin:0;
-    padding: 0; 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0; 
     box-sizing: border-box;
-}
-.title{
-    color: rgb(7, 7, 7); 
-    text-decoration:none; 
-    font-size: 22px; 
-
-}
-#first-section{
-    background: #F8F0E3;
-    height: 150%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.container{
-    padding: 10px 10%; 
+    text-decoration: none;
+    outline:none; 
+    border: none; 
+    text-transform: capitalize;
+    transition: all .2s linear; 
 }
 
-nav{
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: center;
-}
-nav ul li{
-    display: inline-block; 
-    list-style:none; 
-    margin: 10px 20px; 
+*::selection{
+    background: var(--yellow); 
+    color: #333; 
 }
 
-nav ul li a{
-    color: rgb(7, 7, 7); 
-    text-decoration:none; 
-    font-size: 18px; 
-    position: relative; 
-
+html{ 
+    font-size: 62.5%; 
+    overflow-x: hidden;
 }
 
-nav ul li a::after{
-    content: ''; 
-    width: 0; 
-    height: 3px; 
-    background: rgb(146, 173, 146); 
-    position: absolute; 
+html::-webkit-scrollbar{
+    width: 1.4rem; 
+}
+html::-webkit-scrollbar-track{
+    background: #222; 
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--yellow); 
+}
+
+body{
+    background: #111; 
+    overflow-x: hidden; 
+}
+
+header{
+    position: fixed; 
+    top: 0; 
     left: 0; 
-    bottom: -6px; 
-    transition: 0.5s; 
+    z-index: 1000; 
+    height: 100%; 
+    width: 35rem; 
+    background: #1a1a1a; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-flow: column; 
+    text-align:center; 
 }
-nav ul li a:hover::after{
+
+header .user img{
+    height: 17rem; 
+    width: 17rem; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 1rem; 
+    border: .7rem solid var(--yellow); 
+    image-rendering: pixelated;
+}
+header .user .name{
+    font-size: 3.5rem; 
+    color: #fff; 
+}
+
+header .user .post{
+    font-size: 2rem; 
+    color: #eee; 
+}
+
+header .navbar{
     width: 100%; 
 }
-.header{
-    padding: 80px 0; 
-    color: rgb(146, 173, 146)
-}
-.row{
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-}
-.about-col-1{
-    flex-basis: 35%; 
 
+header .navbar ul{
+    list-style: none; 
+    padding: 1rem 3rem; 
 }
-.about-col-1 img{
-    flex-basis: 100%; 
-    border-radius: 15px; 
-    width: 400px; 
-    height: auto;
-    
+
+header .navbar ul li a{
+    display: block; 
+    padding: 1rem; 
+    margin: 1.5rem 0; 
+    background: #333; 
+    color: #fff; 
+    font-size: 2rem; 
+    border-radius: 5rem; 
 }
-.header-text{
-    margin-top: 10%; 
-    font-size: 30px; 
-}
-.header-text h1{
-    font-size: 60px; 
-    margin-top: 20px; 
-}
-.header-text span{
-    color: rgb(146, 173, 146)
+
+header .navbar ul li a:hover{
+    background: var(--yellow); 
 }
