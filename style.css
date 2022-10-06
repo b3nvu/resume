@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow: #f8a60e; 
+    --orange: #f8a60e; 
 }
 
 *{
@@ -16,7 +16,8 @@
 }
 
 *::selection{
-    background: var(--yellow);     color: #333; 
+    background: var(--orange);     
+    color: #333; 
 }
 
 html{ 
@@ -31,7 +32,7 @@ html::-webkit-scrollbar-track{
     background: #222; 
 }
 html::-webkit-scrollbar-thumb{
-    background: var(--yellow); 
+    background: var(--orange); 
 }
 
 body{
@@ -61,7 +62,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--yellow); 
+    background: var(--orange); 
 }
 
 .heading{
@@ -73,7 +74,7 @@ section{
     color: #fff; 
 }
 .heading span{
-    color:var(--yellow); 
+    color:var(--orange); 
 }
 
 header{
@@ -97,7 +98,7 @@ header .user img{
     border-radius: 50%; 
     object-fit: cover; 
     margin-bottom: 1rem; 
-    border: .7rem solid var(--yellow); 
+    border: .7rem solid var(--orange); 
     image-rendering: pixelated;
 }
 header .user .name{
@@ -130,7 +131,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background: var(--yellow); 
+    background: var(--orange); 
 }
 
 #menu{
@@ -163,7 +164,7 @@ header .navbar ul li a:hover{
 }
 
 .home h1 span{
-    color: var(--yellow); 
+    color: var(--orange); 
 }
 .home p{
     font-size: 2rem; 
@@ -187,7 +188,7 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem; 
-    color: var(--yellow); 
+    color: var(--orange); 
     padding: 1rem 0; 
     font-weight: normal;
 }
@@ -215,7 +216,7 @@ header .navbar ul li a:hover{
 }
 .about .row .counter .box span{
     font-size: 4rem; 
-    color: var(--yellow); 
+    color: var(--orange); 
 }
 .about .row .counter .box h3{
     font-size: 2rem; 
@@ -271,7 +272,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color: #fff; 
-    background: var(--yellow);
+    background: var(--orange);
 }
 
 .contact .row{
@@ -335,7 +336,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .info h3 i{
     padding-right: 1rem; 
-    color: var(--yellow); 
+    color: var(--orange); 
 
 }
 
